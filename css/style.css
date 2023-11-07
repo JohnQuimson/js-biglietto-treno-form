@@ -1,9 +1,22 @@
 body {
-  background-color: seagreen;
+  background-color: #004643;
+  color: #004643;
 }
 
 .main-color {
-  color: #2e8b57;
+  color: #004643;
+}
+
+.jq-bg-secondary {
+  background-color: #abd1c6;
+}
+
+.jq-bg-headline {
+  background-color: #fffffe;
+}
+
+.jq-bg-contrast {
+  background-color: #f9bc60;
 }
 
 .jq-bordo {
@@ -30,10 +43,26 @@ button {
   border-radius: 5px;
 }
 
-button:hover,
-input:hover {
+button:focus,
+input:focus {
   color: white;
-  background-color: #2e8b57;
+  background-color: #f9bc60;
+}
+
+label {
+  font-weight: 500;
+}
+
+#nome-passegg {
+  color: #004643;
+}
+
+#nome-passegg,
+#offerta,
+#carrozza,
+#codice,
+#costo {
+  font-weight: 600;
 }
 
 .show {
