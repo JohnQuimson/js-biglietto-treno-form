@@ -1,12 +1,13 @@
 'use strict';
 
-//DICHIARAZIONI
-const prezzoKilometro = 0.21;
-const scontoMinorenni = 0.8;
-const scontoOver65 = 0.6;
-
 const btnGenera = document.getElementById('genera');
 btnGenera.addEventListener('click', function () {
+  //DICHIARAZIONI
+  const prezzoKilometro = 0.21;
+  const scontoMinorenni = 0.8;
+  const scontoOver65 = 0.6;
+  let prezzo;
+  let offerta = 'Prezzo standard';
   //INPUT
   const nome = document.getElementById('nome').value;
   const kilometri = Number(document.getElementById('kilometri').value);
@@ -19,19 +20,28 @@ btnGenera.addEventListener('click', function () {
   //VERIFICA NUMERI
   if (!isNaN(kilometri)) {
     //Calcolo prezzo
-    let prezzo = prezzoKilometro * kilometri;
+    prezzo = prezzoKilometro * kilometri;
     console.log('Prezzo biglietto: ' + prezzo.toFixed(2) + '€');
 
     //CONDIZIONI
     if (eta == 'minorenne') {
       prezzo = prezzo * scontoMinorenni;
+      offerta = 'Sconto minorenni';
     } else if (eta == 'over65') {
       prezzo = prezzo * scontoOver65;
+      offerta = 'Sconto Over 65';
     }
   } else {
     console.log('Errore');
   }
 
   //INNER HTML
-  document.getElementById;
+  document.getElementById('nome-passegg').innerHTML = nome;
+  document.getElementById('offerta').innerHTML = offerta;
+  document.getElementById('carrozza').innerHTML = Math.floor(
+    Math.random() * 20 + 1
+  );
+  document.getElementById('codice').innerHTML =
+    Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
+  document.getElementById('costo').innerHTML = prezzo.toFixed(2) + '€';
 });
