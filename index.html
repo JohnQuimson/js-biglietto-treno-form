@@ -26,22 +26,24 @@
     <main>
       <!-- TOP SECTION -->
       <section class="top">
-        <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
+        <h1 class="text-center text-white jq-uppercase">
+          Calcola il prezzo del tuo biglietto
+        </h1>
         <div class="container bg-white py-5 rounded-3">
           <div class="d-flex justify-content-center gap-5">
             <!-- Box 1 -->
             <div class="sez-input d-flex flex-column">
-              <label for="nome">Nome e Cognome</label>
+              <label for="nome" class="main-color text-center mb-2">Nome e Cognome</label>
               <input type="text" id="nome" />
             </div>
             <!-- Box 2 -->
             <div class="sez-input d-flex flex-column">
-              <label for="nome">Km da percorrere</label>
+              <label for="nome" class="main-color text-center mb-2">Km da percorrere</label>
               <input type="text" id="kilometri" />
             </div>
             <!-- Box 3 -->
             <div class="sez-input d-flex flex-column">
-              <label for="nome">Fascia d'età</label>
+              <label for="nome" class="main-color text-center mb-2">Fascia d'età</label>
               <select name="" id="eta">
                 <option value="minorenne">Minorenne</option>
                 <option value="maggiorenne">Maggiorenne</option>
@@ -50,39 +52,39 @@
             </div>
           </div>
           <!-- Buttons -->
-          <div class="d-flex justify-content-center">
-            <button id="genera">Genera</button>
-            <button id="annulla">Annulla</button>
+          <div class="d-flex justify-content-center mt-5 gap-4">
+            <button id="genera" class="main-color">Genera</button>
+            <button id="annulla" class="main-color">Annulla</button>
           </div>
         </div>
       </section>
       <!-- /Fine TOP -->
 
       <!-- BOTTOM SECTION -->
-      <section class="bottom">
-        <h1 class="text-center">Il tuo biglietto</h1>
+      <section class="bottom mt-5">
+        <h1 class="text-center text-white jq-uppercase">Il tuo biglietto</h1>
 
-        <div class="container bg-white jq-bordo">
-          <h3>Dettaglio passeggeri</h3>
-          <div class="d-flex justify-content-center jq-bordo">
-            <div class="col-3 jq-bordo">
-              <h4>Nome Passeggero</h4>
-              <div id="nome-passegg"></div>
+        <div class="container bg-white py-5 px-4 rounded-3">
+          <h3 class="jq-uppercase">Dettaglio passeggeri</h3>
+          <div class="jq-dati-biglietto d-flex justify-content-center border border-black border-end-0 border-start-0">
+            <div class="col-3 bg-secondary  p-3 text-center">
+              <h5 class="jq-uppercase">Nome Passeggero</h5>
+              <div id="nome-passegg" class="text-white fs-3"></div>
             </div>
-            <div class="col-3 jq-bordo">
-              <h4>Offerta</h4>
+            <div class="col-2  p-3 text-center">
+              <h4 ">Offerta</h4>
               <div id="offerta"></div>
             </div>
-            <div class="col-1 jq-bordo">
-              <h4>Carrozza</h4>
+            <div class="col-2  p-3 text-center">
+              <h4 ">Carrozza</h4>
               <div id="carrozza"></div>
             </div>
-            <div class="col-2 jq-bordo">
-              <h4>Codice CP</h4>
+            <div class="col-2  p-3 text-center">
+              <h4 ">Codice CP</h4>
               <div id="codice"></div>
             </div>
-            <div class="col-3 jq-bordo">
-              <h4>Costo biglietto</h4>
+            <div class="col-3  p-3 text-center">
+              <h4 ">Costo biglietto</h4>
               <div id="costo"></div>
             </div>
           </div>

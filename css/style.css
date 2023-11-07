@@ -2,6 +2,36 @@ body {
   background-color: seagreen;
 }
 
+.main-color {
+  color: #2e8b57;
+}
+
 .jq-bordo {
   border: 1px solid black;
+}
+
+.jq-uppercase {
+  text-transform: uppercase;
+}
+
+.jq-dati-biglietto {
+  height: 100px;
+}
+
+input,
+select {
+  border: 1px solid #2e8b57;
+  border-radius: 5px;
+  height: 30px;
+}
+
+button {
+  border-color: #2e8b57;
+  border-radius: 5px;
+}
+
+button:hover,
+input:hover {
+  color: white;
+  background-color: #2e8b57;
 }
