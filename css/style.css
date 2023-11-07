@@ -35,3 +35,11 @@ input:hover {
   color: white;
   background-color: #2e8b57;
 }
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

@@ -44,4 +44,19 @@ btnGenera.addEventListener('click', function () {
   document.getElementById('codice').innerHTML =
     Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
   document.getElementById('costo').innerHTML = prezzo.toFixed(2) + '€';
+
+  //metti classe = show quando cliccato
+  document.getElementById('sotto').className = 'show';
+});
+
+const btnAnnulla = document.getElementById('annulla');
+btnAnnulla.addEventListener('click', function () {
+  document.getElementById('nome-passegg').innerHTML = '';
+  document.getElementById('offerta').innerHTML = '';
+  document.getElementById('carrozza').innerHTML = '';
+  document.getElementById('codice').innerHTML = '';
+  document.getElementById('costo').innerHTML = '';
+
+  //metti classe = hidden quando cliccato
+  document.getElementById('sotto').className = 'hidden';
 });
