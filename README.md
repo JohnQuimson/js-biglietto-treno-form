@@ -12,3 +12,5 @@
 3. Condizioni (minorenne / over 65)
 4. Output formattato in maniera umana su console
 5. Stampare in pagina i dati
+
+![alt text](img/screen.png)
